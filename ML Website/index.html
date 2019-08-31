@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+  </head>
+  <body>
+    <div id="console"></div>
+    <b>Joe's Web Image Classifier</b>
+    <p></p>
+    <input type="file" onchange="previewFile()"><br>
+    <p></p>
+    <!-- Add an image that we will use to test -->
+    <img id="img" crossOrigin src="https://i.imgur.com/JlUvsxa.jpg" width=227 height=227/>
+    <!-- Load index.js after the content of the page -->
+    <script src="index.js"></script>
+    <p></p>
+    <button type="button", onclick="ClickFunction()">Classify Image</button>
+    <p id="result"></p>
+  </body>
+</html>
